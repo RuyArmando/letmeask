@@ -13,7 +13,7 @@ export function ButtonCounter() {
   const [counter, setCounter] = useState(0);
 
   function increment() {
-    setCounter(counter + 1);
+    setCounter(oldCounter => oldCounter + 1);
   }
 
   return (
