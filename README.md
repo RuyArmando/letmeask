@@ -26,14 +26,18 @@ This project was developed using the following technologies:
 
 ## 🚀 Getting started
 
-Clone the project and access the folder.
+### Requirements
+
+- You need to install both [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) to run this project.
+
+**Clone the project and access the folder.**
 
 ```bash
 $ git clone https://github.com/RuyArmando/letmeask.git
 $ cd letmeask
 ```
 
-Follow the steps below:
+**Follow the steps below:**
 ```bash
 # Install the dependencies
 $ yarn
@@ -41,9 +45,9 @@ $ yarn
 # Start the project
 $ yarn start
 ```
-The app will be available for access on your browser at http://localhost:3000
+The app will be available for access on your browser at `http://localhost:3000`
 
-## 🔖 Layout
+## 🎨 Layout
 
 You can view the project layout through the links below:
 
@@ -58,4 +62,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-<p align="center">Made with 💜 by Ruy Armando</p>
+<p align="center">Made with ❤️ by Ruy Armando 👋</p>
