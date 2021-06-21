@@ -3,11 +3,9 @@
 </p>
 
 <p align="center">
-  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=5965E0&labelColor=121214" alt="License">
-  
-  <img src="https://img.shields.io/github/forks/RuyArmando/letmeask?label=forks&message=MIT&color=5965E0&labelColor=121214" alt="Forks">     
-
-  <img src="https://img.shields.io/github/stars/RuyArmando/letmeask?label=stars&message=MIT&color=5965E0&labelColor=121214" alt="Stars">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/RuyArmando/letmeask">
+  <img alt="Top language" src="https://img.shields.io/github/languages/top/RuyArmando/letmeask">
+  <img alt="Last commit" src="https://img.shields.io/github/last-commit/RuyArmando/letmeask">
 </p>
 
 <h1 align="center">
@@ -16,28 +14,36 @@
 
 <br>
 
-## 🧪 Technologies
+# Letmeask 1.0
+<br>
+<br>
 
-This project was developed using the following technologies:
+## 💻 Sobre o projeto
+
+Nesta edição do Next Level Week, iremos desenvolver uma aplicação para que o usuário possa fazer perguntas a outros usuários e assim receber uma resposta da comunidade, chamada Letmeask
+
+## 🧪 Ferramentas
+
+Este projeto foi desenvolvido utilizando:
 
 - [React](https://reactjs.org)
 - [Firebase](https://firebase.google.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## 🚀 Getting started
+## 🚀 Começando
 
-### Requirements
+### Requisitos
 
-- You need to install both [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) to run this project.
+- Você precisa instalar [Node.js](https://nodejs.org/en/download/) e [Yarn](https://yarnpkg.com/) para executar este projeto.
 
-**Clone the project and access the folder.**
+**Clone o projeto e acesse a pasta:**
 
 ```bash
 $ git clone https://github.com/RuyArmando/letmeask.git
 $ cd letmeask
 ```
 
-**Follow the steps below:**
+**Siga os passos abaixo:**
 ```bash
 # Install the dependencies
 $ yarn
@@ -45,15 +51,13 @@ $ yarn
 # Start the project
 $ yarn start
 ```
-The app will be available for access on your browser at `http://localhost:3000`
+O aplicativo estará disponível em `http://localhost:3000`
 
 ## 🎨 Layout
 
-You can view the project layout through the links below:
+Você pode ver o layout do projeto através do [Figma](http://figma.com/):
 
 - [Layout Web](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate) 
-
-Remembering that you need to have a [Figma](http://figma.com/) account to access it.
 
 ## 📝 License
 
