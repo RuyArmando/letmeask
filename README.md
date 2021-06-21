@@ -29,7 +29,7 @@ This project was developed using the following technologies:
 Clone the project and access the folder.
 
 ```bash
-$ git clone https://github.com/guilhermecapitao/letmeask.git
+$ git clone https://github.com/RuyArmando/letmeask.git
 $ cd letmeask
 ```
 
