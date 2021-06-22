@@ -1,13 +1,8 @@
-import { ButtonDefault, ButtonCounter } from "./components/Button";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
-    <div>
-      <ButtonDefault text="sou um botão" />
-      <ButtonCounter />
-      <ButtonDefault>Sou outro botão</ButtonDefault>
-      <ButtonCounter />
-    </div>
+    <Home />
   );
 }
 
