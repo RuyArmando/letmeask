@@ -57,7 +57,7 @@ O aplicativo estará disponível em `http://localhost:3000`
 
 Você pode ver o layout do projeto através do [Figma](http://figma.com/):
 
-- [Layout Web](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate) 
+- [Prototype by Rebecca Gonzalez](https://www.figma.com/file/rgNLDQE5dlwJriJTB8tn11/Letmeask) 
 
 ## 📝 License
 
