@@ -76,6 +76,17 @@
             font-weight: 500;
             font-size: 14px;
           }
+
+          button {
+            margin-left: 8px;
+            background: transparent;
+            border: 0;
+            color: #e559f9;
+            text-decoration: underline;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+          }
         }
 
         > span {

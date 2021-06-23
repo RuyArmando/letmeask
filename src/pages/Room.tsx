@@ -42,7 +42,7 @@ type RoomParams = {
 };
 
 export function Room() {
-  const { user } = useAuth();
+  const { user, signOut } = useAuth();
   const params = useParams<RoomParams>();
   const [newQuestion, setNewQuestion] = useState("");
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -131,6 +131,7 @@ export function Room() {
               <div className="user-info">
                 <img src={user.avatar} alt={user.name} />
                 <span>{user.name}</span>
+                <button onClick={signOut}>Sign out</button>
               </div>
             ) : (
               <span>
