@@ -11,6 +11,8 @@ import logoImg from "../assets/images/logo.svg";
 import "../styles/room.scss";
 import { useEffect } from "react";
 
+import toast, { Toaster } from 'react-hot-toast';
+
 type FireBaseQuestion = Record<
   string,
   {
@@ -81,8 +83,8 @@ export function Room() {
     }
 
     if (!user) {
-      //* https://react-hot-toast.com
-      throw new Error("You must be logged in");
+      toast.error("You must be logged in.")
+      return;
     }
 
     const question = {
@@ -97,6 +99,8 @@ export function Room() {
 
     await database.ref(`rooms/${roomId}/questions`).push(question);
     setNewQuestion("");
+    
+    toast.success('Question sent successfully!')
   }
 
   return (
@@ -109,6 +113,9 @@ export function Room() {
       </header>
 
       <main>
+        <div>
+          <Toaster />
+        </div>
         <div className="room-title">
           <h1>Sala {title}</h1>
           {questions.length > 0 && <span>{questions.length} pergunta(s)</span>}
