@@ -12,6 +12,7 @@ import { useAuth } from "../hooks/useAuth";
 import { useRoom } from "../hooks/useRoom";
 
 import logoImg from "../assets/images/logo.svg";
+
 import "../styles/room.scss";
 
 type RoomParams = {

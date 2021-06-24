@@ -1,8 +1,10 @@
-import { Link, useHistory } from "react-router-dom";
-import { Button } from "../components/Button";
 import { FormEvent, useState } from "react";
+import { Link, useHistory } from "react-router-dom";
+
+import { Button } from "../components/Button";
 
 import { database } from "../services/firebase";
+
 import { useAuth } from "../hooks/useAuth";
 
 import illustrationImg from "../assets/images/illustration.svg";
