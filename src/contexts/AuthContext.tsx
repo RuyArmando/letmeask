@@ -68,7 +68,7 @@ export function AuthContexProvider(props: AuthContexProviderProps) {
   async function signOut() {
     auth.signOut();
     setUser(undefined);
-    history.push('/');
+    //history.push('/');
   }
 
   return (
