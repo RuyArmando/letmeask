@@ -27,7 +27,7 @@ export function AdminRoom() {
   const roomId = params.id;
   const { user, signOut } = useAuth();
 
-  const { title, questions } = useRoom(roomId);
+  const { owner, title, questions } = useRoom(roomId);
   const [showTooltip, setShowTooltip] = useState(false);
 
   async function handleEndRoom() {
@@ -39,6 +39,17 @@ export function AdminRoom() {
   }
 
   async function handelDeleteQuestion(questionId: string) {
+
+    if (!user) {
+      toast.error("You must be logged in.");
+      return;
+    }
+
+    if (user?.id !== owner) {
+      toast.error("You must own the room.");
+      return;
+    }
+
     if (window.confirm("Tem certeza que você deseja excluir esta pergunta?")) {
       await database.ref(`rooms/${roomId}/questions/${questionId}`).remove();
     }
@@ -47,12 +58,34 @@ export function AdminRoom() {
   }
 
   async function handelCheckQuestionAsAnswered(questionId: string) {
+
+    if (!user) {
+      toast.error("You must be logged in.");
+      return;
+    }
+
+    if (user?.id !== owner) {
+      toast.error("You must own the room.");
+      return;
+    }
+
     await database.ref(`rooms/${roomId}/questions/${questionId}`).update({
       isAnswered: true,
     });
   }
 
   async function handelHighlightQuestion(questionId: string) {
+
+    if (!user) {
+      toast.error("You must be logged in.");
+      return;
+    }
+
+    if (user?.id !== owner) {
+      toast.error("You must own the room.");
+      return;
+    }
+    
     await database.ref(`rooms/${roomId}/questions/${questionId}`).update({
       isHighlighted: true,
     });
