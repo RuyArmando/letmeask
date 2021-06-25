@@ -22,13 +22,20 @@
 
 Nesta edição do Next Level Week, iremos desenvolver uma aplicação para que o usuário possa fazer perguntas a outros usuários e assim receber uma resposta da comunidade, chamada Letmeask
 
-## 🧪 Ferramentas
+## 🧪 Tecnologias
 
 Este projeto foi desenvolvido utilizando:
 
+🎯 Ferramentas:
+- [VS Code](https://code.visualstudio.com/)
 - [React](https://reactjs.org)
 - [Firebase](https://firebase.google.com/)
 - [TypeScript](https://www.typescriptlang.org/)
+
+🔥 Componentes:
+- [react-hot-toast](https://github.com/timolins/react-hot-toast)
+- [react-power-tooltip](https://github.com/justinrhodes1/react-power-tooltip)
+- [react-modal](https://github.com/reactjs/react-modal)
 
 ## 🚀 Começando
 
