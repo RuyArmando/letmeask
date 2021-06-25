@@ -18,6 +18,7 @@ export function Home() {
   const history = useHistory();
   const { user, signInWithGoogle } = useAuth();
   const [roomCode, setRoomCode] = useState("");
+  
 
   async function handleCreateRoom() {
     if (!user) {
@@ -41,7 +42,7 @@ export function Home() {
       return;
     }
 
-    if(roomRef.val().closedAt){
+    if (roomRef.val().closedAt) {
       toast.error(`Room already closed.`);
       return;
     }
