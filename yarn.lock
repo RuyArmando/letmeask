@@ -2135,6 +2135,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-power-tooltip@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-power-tooltip/-/react-power-tooltip-1.0.0.tgz#fe031be9d59d7f975a1ae8d2403bd612914daf2a"
+  integrity sha512-wwjrkzDQCqm5SQ4NYMRGdu5GOxv1ZFxo8KqiPqSOMHqxmG51lqmDyakYN/V4YyCgAJLBQONYyjocTciFqJ0Jug==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-router-dom@^5.1.7":
   version "5.1.7"
   resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-5.1.7.tgz#a126d9ea76079ffbbdb0d9225073eb5797ab7271"
@@ -9810,6 +9817,11 @@ react-modal@^3.14.3:
     prop-types "^15.7.2"
     react-lifecycles-compat "^3.0.0"
     warning "^4.0.3"
+
+react-power-tooltip@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-power-tooltip/-/react-power-tooltip-1.0.2.tgz#1a7c9821542ea84ddcbf1168a09bff4fcb75fe07"
+  integrity sha512-c/aCR92wxOPj+mYp3X3WPOEafIEZCEdjXQJzY72SXaVfCp7lhoaBi0UZcJnqMPcWVwFmtDbhQykqhkBlBsGA4A==
 
 react-refresh@^0.8.3:
   version "0.8.3"

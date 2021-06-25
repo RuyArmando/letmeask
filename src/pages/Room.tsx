@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
+import Tooltip from "react-power-tooltip";
 
 import { Button } from "../components/Button";
 import { RoomCode } from "../components/RoomCode";
@@ -12,7 +13,6 @@ import { useAuth } from "../hooks/useAuth";
 import { useRoom } from "../hooks/useRoom";
 
 import logoImg from "../assets/images/logo.svg";
-
 import "../styles/room.scss";
 
 type RoomParams = {
@@ -27,6 +27,7 @@ export function Room() {
   const { user, signInWithGoogle, signOut } = useAuth();
   const { owner, title, questions } = useRoom(roomId);
   const [newQuestion, setNewQuestion] = useState("");
+  const [showTooltip, setShowTooltip] = useState(false);
 
   async function handelSendQuestion(event: FormEvent) {
     event.preventDefault();
@@ -84,7 +85,7 @@ export function Room() {
       return;
     }
 
-    if (user?.id !== owner){
+    if (user?.id !== owner) {
       toast.error("You must own the room.");
       return;
     }
@@ -99,10 +100,21 @@ export function Room() {
           <img src={logoImg} alt="Letmeask" />
           <div>
             <RoomCode code={roomId} />
-            {user && user?.id === owner && (
-              <Button isOutlined onClick={handleAdminRoom}>
-                Gerenciar
-              </Button>
+            {user && (
+              <div
+                style={{ position: "relative" }}
+                onMouseOver={() => setShowTooltip(true)}
+                onMouseLeave={() => setShowTooltip(false)}
+              >
+                <div className="user-info">
+                  <img src={user?.avatar} alt={user?.name} />
+                </div>
+
+                <Tooltip show={showTooltip} hoverColor="white" hoverBackground="#835afd">
+                  <span onClick={handleAdminRoom}>Gerenciar Sala</span>
+                  <span onClick={signOut}>Logout</span>
+                </Tooltip>
+              </div>
             )}
           </div>
         </div>

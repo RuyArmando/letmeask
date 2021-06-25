@@ -1,5 +1,4 @@
-import { Component, useState } from "react";
-import { BrowserRouter, Redirect, Route, Switch, useParams } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import { AuthContexProvider } from "./contexts/AuthContext";
 

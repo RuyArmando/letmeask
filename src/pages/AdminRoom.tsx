@@ -1,19 +1,20 @@
+import { useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
+import Tooltip from "react-power-tooltip";
 
-import { Button } from "../components/Button";
 import { RoomCode } from "../components/RoomCode";
 import { Question } from "../components/Question";
 
 import { database } from "../services/firebase";
 
+import { useAuth } from "../hooks/useAuth";
 import { useRoom } from "../hooks/useRoom";
 
 import logoImg from "../assets/images/logo.svg";
 import deleteImg from "../assets/images/delete.svg";
 import checkImg from "../assets/images/check.svg";
 import answerImg from "../assets/images/answer.svg";
-
 import "../styles/room.scss";
 
 type RoomParams = {
@@ -24,7 +25,10 @@ export function AdminRoom() {
   const history = useHistory();
   const params = useParams<RoomParams>();
   const roomId = params.id;
+  const { user, signOut } = useAuth();
+
   const { title, questions } = useRoom(roomId);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   async function handleEndRoom() {
     await database.ref(`rooms/${roomId}`).update({
@@ -61,9 +65,20 @@ export function AdminRoom() {
           <img src={logoImg} alt="Letmeask" />
           <div>
             <RoomCode code={roomId} />
-            <Button isOutlined onClick={handleEndRoom}>
-              Encerrar sala
-            </Button>
+            <div
+              style={{ position: "relative" }}
+              onMouseOver={() => setShowTooltip(true)}
+              onMouseLeave={() => setShowTooltip(false)}
+            >
+              <div className="user-info">
+                <img src={user?.avatar} alt={user?.name} />
+              </div>
+
+              <Tooltip show={showTooltip} hoverColor="white" hoverBackground="#835afd">
+                <span onClick={handleEndRoom}>Fechar Sala</span>
+                <span onClick={signOut}>Logout</span>
+              </Tooltip>
+            </div>
           </div>
         </div>
       </header>
