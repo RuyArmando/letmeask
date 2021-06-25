@@ -15,8 +15,19 @@
 <br>
 
 # Letmeask 1.0
-<br>
-<br>
+
+<div align="center">
+<a href="https://letmeask-web-a8b02.web.app" target="_blank" alt="demonstração do app">Website</a> 
+<span> · </span>
+<a href="https://www.figma.com/file/rgNLDQE5dlwJriJTB8tn11/Letmeask">Figma</a> 
+<span> · </span>
+<a href="https://twitter.com/ruyarmando">Twitter</a>
+</div>
+<br />
+<div align="center">
+  <sub>Code by <a href="https://twitter.com/ruyarmando">Ruy Armando </a> ❤️👋</sub>
+</div>
+<br />
 
 ## 💻 Sobre o projeto
 
@@ -36,6 +47,7 @@ Este projeto foi desenvolvido utilizando:
 - [react-hot-toast](https://github.com/timolins/react-hot-toast)
 - [react-power-tooltip](https://github.com/justinrhodes1/react-power-tooltip)
 - [react-modal](https://github.com/reactjs/react-modal)
+- [Classnames](https://github.com/JedWatson/classnames)
 
 ## 🚀 Começando
 
@@ -69,8 +81,3 @@ Você pode ver o layout do projeto através do [Figma](http://figma.com/):
 ## 📝 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-
----
-
-<p align="center">Made with ❤️ by Ruy Armando 👋</p>
