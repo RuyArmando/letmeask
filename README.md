@@ -43,7 +43,7 @@ Este projeto foi desenvolvido utilizando:
 - [Firebase](https://firebase.google.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-🔥 Componentes:
+🔥 Plugins:
 - [react-hot-toast](https://github.com/timolins/react-hot-toast)
 - [react-power-tooltip](https://github.com/justinrhodes1/react-power-tooltip)
 - [react-modal](https://github.com/reactjs/react-modal)
